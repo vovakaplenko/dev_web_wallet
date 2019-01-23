@@ -1,0 +1,5 @@
+FROM jboss/keycloak-postgres:latest
+
+COPY exported_realms /opt/jboss/keycloak/bin/exported_realms
+
+CMD ["-Dkeycloak.migration.action=import", "-Dkeycloak.migration.provider=dir", "-Dkeycloak.migration.dir=/opt/jboss/keycloak/bin/exported_realms", "-Dkeycloak.migration.strategy=OVERWRITE_EXISTING", "-b", "0.0.0.0", "--server-config", "standalone-ha.xml"]

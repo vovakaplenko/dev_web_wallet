@@ -1,0 +1,115 @@
+
+.navbar-left{
+    margin-left:0!important;
+}
+
+
+.navbar-right{
+    color: rgba(255,255,255,.5);
+}
+
+.table td {
+    max-width: 0;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+#ttime{
+    width:15%;
+}
+#tcategory{
+    width:10%;
+}
+#tamount{
+    width:15%;
+}
+#ttxid{
+    width:20%;
+}
+#tto{
+    width:35%;
+}
+#tconfirms{
+    width:5%;
+}
+.tcenter{
+    text-align:center;
+    vertical-align:middle;
+}
+.form-group.flex{
+    display:inline-flex;
+    width:100%;
+    padding-left:15px;
+}
+
+
+[v-cloak] { display:none; }
+
+.is-danger{
+    border-color:red!important;
+}
+.top-navbar .nav-menu{
+    min-height:0;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+
+@media screen and (max-width: 749px)  {
+    .dropdown-toggle{
+        width:200px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align:right;
+    }
+    .dropdown-user > a > span {
+        display:block;
+    }
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?c09fso');
+    src:  url('../fonts/icomoon.eot?c09fso#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?c09fso') format('truetype'),
+    url('../fonts/icomoon.woff?c09fso') format('woff'),
+    url('../fonts/icomoon.svg?c09fso#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mining:before {
+    content: "\e900";
+}
+.dotted{
+    display:inline-block;
+    border-bottom: 2px dotted black;
+}

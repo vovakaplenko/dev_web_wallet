@@ -1,0 +1,9 @@
+/node_modules/
+sslcert/
+logs/
+.terraform
+.terraform.tfstate.lock.info
+*.zip
+DS_Store
+.DS_store
+Dockerrun.aws.json=
